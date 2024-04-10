@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SCROLL TO THE TOP */
+.scroll-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: .9rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+}
+
+
+/* custom width of chart */
+canvas {
+  width: 100%;
+  height: auto;
+  max-width: 348px;
+  touch-action: none;
+}
+
+/* Hover icon card image */
+.icon-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image:hover .icon-container {
+  opacity: 1;
+}
+
+.overlay-img:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s linear;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-hover:hover .overlay-img:before {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* customize button upload */
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-upload-wrapper.ant-upload-picture-card-wrapper .ant-upload.ant-upload-select,
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-upload-wrapper.ant-upload-picture-circle-wrapper .ant-upload.ant-upload-select {
+  width: 300px;
+  height: 300px;
+  margin-inline-end: 8px;
+  margin-bottom: 8px;
+  text-align: center;
+  vertical-align: top;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: 1px dashed #d9d9d9;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+/* custom header none border */
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-menu-horizontal {
+  line-height: 46px;
+  border: 0;
+  box-shadow: none;
+}
+
+/* costom card of best selling  */
+:where(.css-dev-only-do-not-override-1uweeqc).ant-card .ant-card-actions {
+  position: absolute;
+  list-style: none;
+  background: none;
+  opacity: 80%;
+  display: flex;
+  /* border-radius: 8px 8px 8px 8px; */
+  border: none;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-1uweeqc).ant-card .ant-card-body {
+  border-radius: 8px 8px 8px 8px;
+}
+
+:where(.css-dev-only-do-not-override-1uweeqc).ant-card .ant-card-meta {
+  margin: 0;
+  display: flex;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+/* custom border button */
+.border-gradient {
+  border-image: linear-gradient(to right, #292D77, #2BD7AD);
+  border-image-slice: 1;
+}
+
+.border-gradient:hover {
+  border-image: linear-gradient(to right, #2BD7AD, #292D77);
+  border-image-slice: 1;
+}
+
+/* background of best selling */
+.background-gradient {
+  background: linear-gradient(to right, #D6F0EF, #EEEDFF);
+}
+
+/* background of feature Author */
+.bg-feature-author {
+  background: linear-gradient(to right, #EEEDFF, #D6F0EF);
+}
+
+:where(.css-dev-only-do-not-override-1uweeqc).ant-card-bordered .ant-card-cover {
+  margin-top: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+:where(.css-dev-only-do-not-override-1uweeqc).ant-card .ant-card-actions>li:not(:last-child) {
+  border-inline-end: none;
+}
+
+/* on active page */
+.active {
+  background-color: blue;
+}
+
+/* header */
+:where(.css-dev-only-do-not-override-djtmh8).ant-menu-horizontal {
+  line-height: 46px;
+  border: 0;
+  /* border-bottom: 1px solid rgba(5, 5, 5, 0.06); */
+  box-shadow: none;
+}
+
+.grow a {
+  font-size: 16px;
+  color: #292D77 !important;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: inherit;
+}
+.grow a:hover {
+  font-size: 16px;
+  color: #1677FF !important;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* customize button search */
+:where(.css-dev-only-do-not-override-djtmh8).ant-input-search >.ant-input-group >.ant-input-group-addon:last-child .ant-input-search-button {
+  margin-inline-end: -1px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-start-start-radius: 0;
+  border-start-end-radius: 6px;
+  border-end-end-radius: 6px;
+  border-end-start-radius: 0;
+  box-shadow: none;
+  background: #292D77;
+}
